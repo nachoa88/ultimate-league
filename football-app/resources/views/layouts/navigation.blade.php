@@ -32,7 +32,7 @@
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <!-- Authenticated user dropdown -->
                 @auth
-                    <x-dropdown align="right" width="48">
+                    <x-dropdown class="text-right" width="48">
                         <x-slot name="trigger">
                             <x-button-green class="w-auto my-2">
                                 <div class="flex items-center ms-1">
@@ -76,7 +76,7 @@
             <!-- Hamburger -->
             <div class="-me-2 flex items-center sm:hidden">
                 <button @click="open = ! open"
-                    class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-teal-500 hover:bg-teal-500 hover:text-white focus:outline-none focus:bg-teal-500 focus:text-white transition duration-150 ease-in-out">
+                    class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-teal-500 hover:bg-teal-500 focus:outline-none focus:bg-teal-500 focus:text-white transition duration-150 ease-in-out">
                     <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

@@ -30,7 +30,7 @@ class AuthenticatedSessionController extends Controller
 
         // Check if user has verified email.
         $user = Auth::user();
-        if ($user->hasVerifiedEmail()) {
+        if ($user->hasVerifiedEmail()) { // IDE helper does not recognize this method.
             return redirect()->intended(route('home', absolute: false));
         };
 
